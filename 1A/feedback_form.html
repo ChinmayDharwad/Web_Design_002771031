@@ -16,40 +16,50 @@
                 font-size: 30px;
                 color: white;
                 font-weight: bold;
+                position: absolute;
+                top:0%;
+                bottom: 0%;
             }
 
-            #feedback-page{
+            .back-img{
                 background-image: url("images/bg-img.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
                 /* width: 100vw; */
                 height: 100vh;
+                filter: blur(2px);
             }
 
+            /* #feedback-page{
+                position: absolute;
+                top:0%;
+                bottom:0% ;
+            }  */
+        
+
             .feedback-form{
-                margin-top: 5%;
-                margin-left: 35%;
-                padding-left: 30px;
-                /* margin-right: 10%; */
                 font-size: 30px;
                 font-family: "Comic Sans MS", "Comic Sans", cursive;
+                color: solid black;
+                /* font-weight: bold; */
                 backdrop-filter: blur(3px);
+                position: absolute;
+                top:35%;
+                left: 35%;
             }
+            
 
             .submit{
                 padding-left: 140px;
-
-
             }
-
-            
 
         </style>
 
     </header>
     
     <body>
+        <div class="back-img"></div>
         <div id="feedback-page">
             <div class="heading">
                 <h2> Feedback :</h2>
@@ -58,7 +68,7 @@
             <div class="feedback-form">
                 <form>
                     <label for="fname">Name: </label>
-                    <input type="text" id="fname" name="fname" style="margin-left: 50px"><br>
+                    <input type="text" id="fname" name="fname" style="margin-left: 55px"><br>
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="visit date" style="margin-left: 65px"><br>
 					<label for="date">Time:</label>

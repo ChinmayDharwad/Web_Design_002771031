@@ -9,14 +9,24 @@
                 margin: 0;
                 padding: 0;
             }
-            #menu-page{
+
+            .back-img{
                 background-image: url("images/bg-img.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
                 /* width: 100vw; */
                 height: 100vh;
-                filter: blur(0px);
+                filter: blur(2px);
+            }
+
+            
+            #menu-page{
+                /* width: 100vw; */
+                left: 40%;
+                top: 30%;
+                bottom: 0%;
+                position: absolute;
             }
             
             .heading{
@@ -24,28 +34,34 @@
                 font-size: 30px;
                 color: white;
                 font-weight: bold;
+                top: 0%;
+                bottom: 0%;
+                position: absolute;
+                
             }
 
             .menu{
-                margin-top: 5%;
-                margin-left: 40%;
                 font-size: 30px;
                 font-family: "Comic Sans MS", "Comic Sans", cursive;
             }
 
-            th,td{
+            td, th{
                 padding: 15px;
             }
+            
+
+            
 
         </style>
     </header>
 
     <body>
-        <div id="menu-page">
-            <div class="heading">
-                <h2> Menu :</h2>
-            </div>
 
+        <div class="back-img"></div>
+        <div class="heading">
+            <h2> Menu :</h2>
+        </div>
+        <div id="menu-page">
             <div class="menu">
                 <table bgcolor="white">
                     <tr bgcolor="grey"> 
