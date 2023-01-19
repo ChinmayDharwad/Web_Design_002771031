@@ -3,10 +3,7 @@
 A coffeehouse, coffee shop, or café is an establishment that primarily serves coffee of various types, notably espresso, latte, and cappuccino. Some coffeehouses may serve cold drinks, such as iced coffee and iced tea, as well as other non-caffeinated beverages.
 
 
-
-
-
-
+![alt text](https://media.timeout.com/images/105877333/1024/576/image.jpg)
 
 
 Developed a website for a coffee cafe named **"Wake You Up"**. This project includes 2 parts as follows:
