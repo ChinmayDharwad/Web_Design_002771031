@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main-page{
+    background-image: url("images/bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100vw; */
+    height: 100vh;
+    /* backdrop-filter: blur(); */
+}
+
+.heading{
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+header p{
+    font-size: 30px;
+}
+
+.time{
+    font-size: 20px;
+    float: right;
+    padding-right: 30px;
+}
+
+
+.buttons{
+    padding-top: 30px;
+    padding-left: 100px;
+    
+}
+
+button{
+    padding: 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 12%;
+    border-radius: 20px;
+}
+
+.menu{
+    /* margin-right: 500px; */
+    padding: 0px;
+    margin: 0px;
+}
+
+.music{
+    padding: 2px
+}
+
+.loc-title{
+    /* padding-top: 15px;*/
+    padding-right: 50px; 
+    padding-left: 5px;
+    color: white;
+    font-size: 20px;
+    float: left;
+    
+    
+}
+.locations{
+    padding-top: 40px;
+    padding-left: 100px;
+    float: left;
+}
+
+.loc{
+    float: left;
+    /* padding: 20px; */
+    border-radius: 1cm;
+    
+}
+
+.loc img{
+    height: 100px;
+    width: 150px;
+    border: 5px solid black
+}
+
+.name{
+    text-align: center;
+    color: white
+}
+
+.shop-vid{
+    float: right;
+    padding-right: 100px;
+    border-radius: 20px;
+}
+
+footer p{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 80%;
+    color: white;
+}
+
+.footer{
+    padding-top: 300px;
+}
+
+footer{
+    border-top: solid black;
+    /* backdrop-filter: blur(2px); */
+    background-color: black;
+}

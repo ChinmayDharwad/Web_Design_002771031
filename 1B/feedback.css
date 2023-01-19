@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    padding: 30px 50px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+#feedback-page{
+    background-image: url("images/bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.feedback-form{
+    margin-top: 5%;
+    margin-left: 35%;
+    padding-left: 30px;
+    /* margin-right: 10%; */
+    font-size: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    backdrop-filter: blur(3px);
+}
+
+.submit{
+    padding-left: 140px;
+
+
+}
