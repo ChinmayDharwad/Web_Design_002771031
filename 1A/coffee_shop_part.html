@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="images/coffee-favicon.png">
+        <title>Coffee Shop</title>
+        
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            #main-page{
+                background-image: url("images/bg-img.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* width: 100vw; */
+                height: 100vh;
+                /* backdrop-filter: blur(); */
+            }
+
+            .heading{
+                padding-top: 3%;
+                text-align: center;
+                color: white;
+                font-size: 30px;
+
+            }
+
+            .buttons{
+                padding-top: 30px;
+                padding-left: 200px;
+                
+            }
+
+            button{
+                padding: 5px 15px;
+                font-size: 20px;
+                font-weight: bold;
+				width: 15%;
+				border-radius: 20px;
+            }
+
+            .menu{
+                padding: 10px;
+            }
+
+            .feedback{
+                padding: 10px
+            }
+
+            .loc-title{
+                /* padding-top: 15px;*/
+                padding-right: 100px; 
+                padding-left: 10px;
+                color: white;
+                font-size: 20px;
+                float: left;
+                
+                
+            }
+            .locations{
+                padding-top: 50px;
+                padding-left: 200px;
+                float: left;
+            }
+
+            .loc{
+                float: left;
+                /* padding: 20px; */
+                border-radius: 1cm;
+                
+            }
+
+            .loc img{
+                height: 150px;
+                width: 200px;
+                border: 5px solid black
+            }
+
+            .name{
+                text-align: center;
+                color: white
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id = "main-page">
+            <div class="heading">
+                <h1>Wake You Up</h1>
+                <p>(Best in Boston)</p>
+                
+            </div>
+
+            <div class ="buttons">
+                <div class = "menu">
+                    <button type="button" onclick="location.href='menu.html'">
+                        Menu
+                    </button>
+                </div>
+                <div class="feedback">
+                    <button type="button" onclick="location.href='feedback_form.html'">
+                        Feedback
+                    </button>
+                </div>
+            </div>
+        
+    
+            <div class="locations">
+                <div class="loc-title"> <span> 📍 </span> Locations: </div>
+                <div class="loc">
+                    <a href="https://www.google.com/maps/place/South+Boston+Waterfront,+Boston,+MA/@42.3487632,-71.0613067,13.73z/data=!4m5!3m4!1s0x89e37a831865f8c5:0xad7eb0e04b6892d9!8m2!3d42.3462519!4d-71.0421443?hl=en&authuser=0" target="_blank">
+                        <img class="loc" src="images/sea-port.png" alt="sea port">
+                        <div class="name"> Sea Port </div>
+                    </a>
+                </div>
+                <div class = "loc">
+                    <a href="https://www.google.com/maps/place/Boston+Common/@42.3550936,-71.0679143,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3709dbc6e232b:0x3f8683fc7ba94f04!8m2!3d42.3550897!4d-71.0657256?hl=en&authuser=0" target="_blank">
+                        <img class="loc" src="images/boston-common.jpg" alt="boston common">
+                        <div class="name"> Boston Common </div>
+                    </a> 
+                </div>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
