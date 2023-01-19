@@ -9,11 +9,11 @@ A coffeehouse, coffee shop, or café is an establishment that primarily serves c
 Developed a website for a coffee cafe named **"Wake You Up"**. This project includes 2 parts as follows:
 
 **Part 1:**<br />
-* Website includes 3 pages and below are some of the HTML controls used are:<br />
+* Website includes 3 pages and some of the HTML controls used are:<br />
 Favicon, Table, Form, Images, Hyperlink, Button, Shortcuts, Span, etc
 * Implemented the popup for successful submition using JavaScript
 
 **Part 2:**<br />
-* Website includes 4 pages and apart from common HTML controls, exclusive HTML5 controls used are:<br />
+* Website includes 4 pages and apart from basic HTML controls, exclusive HTML5 controls used are:<br />
 Audio, Video, Header, Footer, Time, Source, etc
 * Implemented the popup for successful submition using JavaScript
