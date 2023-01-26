@@ -6,11 +6,11 @@ Developed a personal **Portfolio** to showcase my skills to recuirters as I am a
 
 Portfolio includes 1 page with 6 sections as follows:
 
-**1. Home
-2. About
-3. Skills
-4. Curriculum (Education, Work Experience)
-5. Projects
+**1. Home </ br>
+2. About </ br>
+3. Skills </ br>
+4. Curriculum (Education, Work Experience) </ br>
+5. Projects </ br>
 6. Contact**
 
 I have used HTML, CSS, and little bit of JavaScript. I've incorporated a number of controls and features, some of which are listed below:
