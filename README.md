@@ -1,6 +1,6 @@
 # Assignment 2 - Portfolio
 
-![Logo data](/Web_Design_002771031/img/readme_logo.png?raw=true "Porfolio Logo")
+![Logo data](/img/readme_logo.png?raw=true "Porfolio Logo")
 
 Developed a personal **Portfolio** to showcase my skills to recuirters as I am actively looking for **Software Development/ Software Engineering Interships** at better organization.
 
