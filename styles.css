@@ -432,12 +432,13 @@ html {
   top: 32%;
   background-color: #252a2e;
   padding: 20px;
-  max-width: 350px;
+  max-width: 450px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .contact .col .info ul {
   list-style: none;
+  width: max-content;
 }
 .contact .col .info ul li {
   margin-bottom: 20px;
