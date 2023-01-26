@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <div class="main-header">
+      <header>
+        <div class="logo">
+          <a href="portfolio.html">CVD</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#home" onclick="hideOnSelection()">HOME</a></li>
+            <li><a href="#about" onclick="hideOnSelection()">ABOUT</a></li>
+            <li><a href="#skills" onclick="hideOnSelection()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="hideOnSelection()">CURRICULUM</a>
+            </li>
+            <li>
+              <a href="#projects" onclick="hideOnSelection()">PROJECTS</a>
+            </li>
+            <li><a href="#contact" onclick="hideOnSelection()">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive">
+          <i class="fa-solid fa-bars" onclick="Menu()"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECTION HOME -->
+    <section id="home" class="home">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="img/profile_pic.png" alt="profile-photo" />
+        </div>
+        <h1>CHINMAY DHARWAD</h1>
+        <h2>Master's Student (Northeastern University, BOS)</h2>
+        <div class="links">
+          <a
+            href="https://www.linkedin.com/in/chinmay-dharwad-476092128/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/ChinmayDharwad24" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.hackerrank.com/chinmaydharwad21" target="_blank"
+            ><i class="fa-brands fa-hackerrank"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section id="about" class="about">
+      <div class="about-sec">
+        <h2>ABOUT</h2>
+        <p style="text-align: center">
+          <span>"We're here to put a dent in the Universe!!" - Steve Jobs</span>
+        </p>
+        <p >
+          Modern software technology and how it affects business are two topics
+          that really intrigue me. I'm looking for a
+          <b>software engineer/ software developer internship</b> position at a
+          better company because I have well-honed abilities in Object-oriented
+          programming (Java, Python), Web development, Data Structures &
+          Algorithms, Problem-solving, Data analytics, and Quality engineering.
+        </p>
+
+        <div class="row">
+          <!-- personal data -->
+          <div class="col">
+            <h3>Personal Details</h3>
+            <ul>
+              <li>
+                <strong>Contact</strong>
+                617-373-0297
+              </li>
+              <li>
+                <strong>Email</strong>
+                chinmaydharwad21@gmail.com
+              </li>
+              <li>
+                <strong></strong>
+                dharwad.c@northeastern.edu
+              </li>
+              <li>
+                <strong>Address</strong>
+                1203 Boylston St, Boston
+              </li>
+              <li>
+                <strong>Current Position</strong>
+                Master's Student
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <a
+              href="files/Resume - ChinmayDharwad.pdf"
+              download="Resume - ChinmayDharwad"
+              style="text-decoration: None"
+            >
+              <button>
+                Resume <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+              </button>
+            </a>
+            <a
+              href="files/General Cover Letter.pdf"
+              download="General Cover Letter - ChinmayDharwad"
+              style="text-decoration: None"
+            >
+              <button>
+                Cover Letter <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <div class="row">
+          <div class="col">
+            <h3>
+              <img src="img/coding.png" style="margin-bottom: -1.2%" />
+              Programming Languages
+            </h3>
+            <p style="font-size: 20px">Java, Python</p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/web.png" style="margin-bottom: -1.2%" /> Web
+              Technologies
+            </h3>
+            <p style="font-size: 20px">
+              HTML, CSS, JavaScript, Bootstrap, REST APIs
+            </p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/database.png" style="margin-bottom: -1.2%" />
+              Database Technologies
+            </h3>
+            <p style="font-size: 20px">SQL, MySQL, MS SQL Server, JDBC</p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/cloud.png" style="margin-bottom: -1.2%" /> Cloud
+              Technologies
+            </h3>
+            <p style="font-size: 20px">AWS, Azure</p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/softwares.png" style="margin-bottom: -1.2%" /> Tools
+              and Softwares
+            </h3>
+            <p style="font-size: 20px">
+              Git, Pycharm, VS Code, Eclipse, Jupyter, Colab, JUnit, Azure
+              DevOps
+            </p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/os.png" style="margin-bottom: -1.2%" /> Operating
+              Systems
+            </h3>
+            <p style="font-size: 20px">Linux/ Unix, Windows</p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/lib.png" style="margin-bottom: -1.2%" /> Libraries
+            </h3>
+            <p style="font-size: 20px">
+              Pandas, NumPy, Sklearn, Matplotlib, Seaborn, OpenCV, Tensorflow,
+              Django
+            </p>
+          </div>
+          <div class="col">
+            <h3>
+              <img src="img/fundamentals.png" style="margin-bottom: -1.2%" />
+              Fundamental Concepts
+            </h3>
+            <p style="font-size: 20px">Machine Learning, Deep Learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="curriculum-section">
+        <h2>Curriculum</h2>
+        <div class="row">
+          <div class="col education">
+            <h3>Education</h3>
+            <div class="item edu">
+              <h4>MS in Information Systems</h4>
+              <div class="r">
+                <div class="c">
+                  <img src="img/neu.png" style="width: 40px; height: 40px" />
+                </div>
+                <div class="c">
+                  <span class="org">Northeastern University, Boston</span>
+                  <span class="year">Sep 2022 - May 2024 (Expected)</span>
+                </div>
+              </div>
+              <p>
+                Coursework:<br />
+                1) Application Engineering and Development <br />
+                2) Algorithms and Data Structures <br />
+                3) Data Science Engineering Methods and Tools <br />
+                4) Web Design/ User Experience Engineering <br />
+                5) Data Management and Database Design <br />
+              </p>
+            </div>
+            <div class="item edu">
+              <h4>BE in Electronics and Communication</h4>
+              <div class="r">
+                <div class="c">
+                  <img src="img/kle.png" style="width: 40px; height: 40px" />
+                </div>
+                <div class="c">
+                  <span class="org">KLE Tech University, India</span>
+                  <span class="year">Aug 2016 - Jun 2020</span>
+                </div>
+              </div>
+              <p>GPA: 3.8 / 4.0</p>
+            </div>
+            <div class="item edu">
+              <h4>Minor Program in Computer Science</h4>
+              <div class="r">
+                <div class="c">
+                  <img src="img/kle.png" style="width: 40px; height: 40px" />
+                </div>
+                <div class="c">
+                  <span class="org">KLE Tech University, India</span>
+                  <span class="year">Apr 2018 - Jan 2020</span>
+                </div>
+              </div>
+              <p>GPA: 3.6 / 4.0</p>
+            </div>
+          </div>
+
+          <div class="col experience">
+            <h3>Work Experience</h3>
+            <div class="item exp">
+              <h4>CS Analyst</h4>
+              <div class="r">
+                <div class="c">
+                  <img src="img/aptean.png" style="width: 40px; height: 40px" />
+                </div>
+                <div class="c">
+                  <span class="org">Aptean, India</span>
+                  <span class="year">Jun 2021 - Jul 2022</span>
+                </div>
+              </div>
+              <p>
+                • Managed IRMS software product (Warehouse Management System)
+                for clients in USA. • Created queries in SQL Server and OpenEdge
+                Progress to extract required data as part of an investigation. •
+                Completed deployments to Test and Production environments.
+                Worked extensively on Linux and Windows. • Investigated and
+                analyzed issues by working on product logs, database, product
+                integrations, REST API testing, cloud/server (Azure cloud & AWS)
+                issues and constructed possible scenarios to debug root causes.
+                • Involved as a lead in gathering and clarifying requirements
+                from clients. • Achieved great experience in Product management,
+                Customer relationship management, Leading client meetings, and
+                Database management. • Mentored juniors about Product
+                architecture, Software management, and Client interaction.
+              </p>
+            </div>
+            <div class="item exp">
+              <h4>Associate Software Engineer</h4>
+              <div class="r">
+                <div class="c">
+                  <img
+                    src="img/accenture.png"
+                    style="width: 40px; height: 40px"
+                  />
+                </div>
+                <div class="c">
+                  <span class="org">Accenture, India</span>
+                  <span class="year">Nov 2020 - Jun 2021</span>
+                </div>
+              </div>
+              <p>
+                • Accomplished Tech Expressway Program certification from
+                Accenture by completing training that included Java, Python,
+                SQL, SDLC management, Web Security, and Data Structures &
+                Algorithms. • Developed a Tableau dashboard application used to
+                optimize expenses of client. Created user stories, test cases,
+                and test data collaborating with 4-member team as per business
+                requirements. • Built CI/CD pipeline to run Java Selenium codes
+                to test software functionality and check performance using Junit
+                in an AI Analytics project. • Organized work on Azure DevOps
+                following scrum methodology for better collaboration and
+                delivery of software.
+              </p>
+            </div>
+            <div class="item exp">
+              <h4>Software Developer Intern</h4>
+              <div class="r">
+                <div class="c">
+                  <img src="img/abb.png" style="width: 40px; height: 40px" />
+                </div>
+                <div class="c">
+                  <span class="org">ABB, India</span>
+                  <span class="year">Jan 2020 - Jun 2020</span>
+                </div>
+              </div>
+              <p>
+                • Finalized and implemented GoAhead embedded web server to relay
+                software among 4 different servers in the plan, working along
+                with 8-member cross-functioning scrum team. • Found around 10 to
+                12 bugs related to relay software built on Java and fixed all.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="project-section">
+        <h2>PROJECTS</h2>
+        <div class="gallery">
+          <div class="project">
+            <img src="img/ngo.jpg" alt="" />
+            <div class="overlay">
+              <h3>NGO Management System</h3>
+              <p>(Northeastern University)</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/life_insurance.jpg" alt="" />
+            <div class="overlay">
+              <h3>Risk Assessment: Prudential Life Insurance</h3>
+              <p>(Northeastern University)</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/age_detection.jpg" alt="" />
+            <div class="overlay">
+              <h3>Facial Age Classification</h3>
+              <p>(Northeastern University)</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/snake_game.png" alt="" />
+            <div class="overlay">
+              <h3>Childhood Snake Game</h3>
+              <p>(KLE Technological University)</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/hms.jpg" alt="" />
+            <div class="overlay">
+              <h3>Hotel Management System</h3>
+              <p>(KLE Technological University)</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/dsa.jpg" alt="" />
+            <div class="overlay">
+              <h3>Data Structures & Algorithms</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-section">
+        <h2>CONTACT</h2>
+        <div class="row">
+          <!-- SEND MESSAGE -->
+          <div class="col">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button>
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Location -->
+          <div class="col">
+            <img src="img/location.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  1203 Boylston St
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  +1 617-373-0297
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: chinmaydharwad21@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#home" class="top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/chinmay-dharwad-476092128/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/ChinmayDharwad24" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.hackerrank.com/chinmaydharwad21" target="_blank"
+          ><i class="fa-brands fa-hackerrank"></i
+        ></a>
+      </div>
+      <div class="author">
+        <p>Designed by Chinmay Dharwad</p>
+        <p>Copyright © 2023</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

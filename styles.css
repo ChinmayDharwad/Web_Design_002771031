@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* MENU */
+.main-header {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.main-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.main-header header .logo a {
+  font-family: "Righteous";
+  font-size: 40px;
+  color: #1cb698;
+  text-decoration: none;
+}
+.main-header header ul {
+  display: flex;
+  list-style: none;
+}
+.main-header header nav ul li a {
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.main-header header nav ul li a:hover {
+  color: #1cb698;
+}
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+/* SECTION ABOUT */
+.home {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(img/main_bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.home .profile {
+  top: 45px;
+  padding: 10px;
+  background-color: #1e2326;
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+  position: relative;
+}
+.home .profile-img {
+  position: relative;
+  top: 10px;
+}
+.home .profile img {
+  margin-top: 40px;
+  border: 10px solid #1cb698;
+  display: block;
+  width: 70%;
+  margin: auto;
+  border-radius: 100%;
+}
+.home .profile h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: "Righteous";
+}
+.home .profile h2 {
+  font-size: 17px;
+  font-weight: normal;
+}
+.home .profile .links a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.home .profile .links a:hover {
+  background-color: #1cb698;
+}
+.about {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.about .about-sec {
+  max-width: 1100px;
+  margin: auto;
+}
+.about h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.about .about-sec p {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  /* font-weight: bold; */
+}
+.about .about-sec p span {
+  color: #1cb698;
+  font-weight: bold;
+}
+.about .row {
+  position: relative;
+  top: 15px;
+  display: flex;
+  
+}
+.about .row .col {
+  width: 50%;
+}
+.about .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+.about .row .col ul {
+  list-style: none;
+}
+.about .row .col ul li {
+  margin: 12px 0;
+}
+.about .row .col ul li strong {
+  display: inline-block;
+  color: #1cb698;
+  width: 130px;
+}
+.about .row .col ul li span {
+  background-color: #1cb698;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.about button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  width: 170px;
+}
+.about button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.about button:hover .overlay {
+  width: 100%;
+}
+/* SECTION SKILLS */
+.skills {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+.skills .skills-section {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.skills .row .col {
+  width: 50%;
+  padding: 20px 20px;
+}
+.skills .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  color: #1cb698;
+  margin-bottom: 10px;
+}
+
+/* SECTION CURRICULUM */
+.curriculum {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.curriculum .curriculum-section {
+  max-width: 1100px;
+  margin: auto;
+}
+.curriculum h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.curriculum .row {
+  display: flex;
+  justify-content: space-between;
+}
+.curriculum .row .col {
+  width: 49%;
+  padding: 0 20px;
+}
+.curriculum .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+  text-align: center;
+}
+.curriculum .row .col .r {
+  display: flex;
+}
+.curriculum .row .col .c {
+  padding-right: 10px;
+}
+.curriculum .row .education {
+  border-right: 2px solid #252a2e;
+}
+.curriculum .row .experience {
+  border-left: 2px solid #252a2e;
+}
+.curriculum .row .item {
+  border: 2px solid #1cb698;
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #252a2e;
+  position: relative;
+}
+.curriculum .row .item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.curriculum .row .item .org {
+  color: #1cb698;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+.curriculum .row .item .year {
+  display: block;
+  color: #1cb698;
+  margin-bottom: 10px;
+}
+.curriculum .row .item p {
+  line-height: 24px;
+}
+.curriculum .row .edu {
+  margin-right: 20px;
+}
+.curriculum .row .exp {
+  border-left: 2px solid #1cb698;
+  margin-left: 20px;
+}
+
+
+/* SECTION PROJECTS */
+.projects {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+.projects .project-section {
+  max-width: 1100px;
+  margin: auto;
+}
+.projects h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.projects .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects .gallery .project {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+.projects .gallery .project img {
+  width: 100%;
+  display: block;
+}
+.projects .gallery .project .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.projects .gallery .project .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.projects .gallery .project .overlay:hover {
+  opacity: 1;
+}
+.projects .gallery .project .overlay:hover h3 {
+  margin-bottom: 0px;
+}
+/* SECTION CONTACT */
+.contact {
+  background-image: url(img/contact_bg.png);
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 0;
+}
+.contact .contact-section {
+  max-width: 1100px;
+  margin: auto;
+}
+.contact h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.contact .row {
+  display: flex;
+}
+.contact .col {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.contact .col input,
+.contact .col textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 18px;
+}
+.contact button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.contact button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.contact button:hover .overlay {
+  width: 100%;
+}
+.contact .col img {
+  width: 100%;
+}
+.contact .col .info {
+  position: absolute;
+  top: 32%;
+  background-color: #252a2e;
+  padding: 20px;
+  max-width: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact .col .info ul {
+  list-style: none;
+}
+.contact .col .info ul li {
+  margin-bottom: 20px;
+}
+.contact .col .info ul li i {
+  color: #1cb698;
+  display: inline-block;
+  margin-right: 20px;
+}
+footer {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .links {
+  margin-bottom: 20px;
+}
+footer .links a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+footer .top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1cb698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+/* SECTION RESPONSIVE */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about .row {
+    display: block;
+  }
+  .about .row .col {
+    width: fit-content;
+  }
+
+  .skills .row {
+    display: block;
+  }
+  .skills .row .col {
+    width: 100%;
+  }
+  .skills .row .col .barra-skill {
+    width: 100%;
+  }
+
+  .curriculum .row {
+    display: block;
+  }
+  .curriculum .row .col {
+    width: 90%;
+  }
+  .curriculum .row .derecha {
+    margin-left: 20px;
+  }
+
+  .projects .gallery {
+    display: block;
+    width: 100%;
+  }
+  .projects .gallery .project {
+    max-width: 100%;
+  }
+  .projects .gallery .project img {
+    width: 100%;
+  }
+  .contact .row {
+    display: block;
+  }
+  .contact .row .col {
+    width: 100%;
+  }
+}
