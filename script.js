@@ -1,6 +1,19 @@
-var count = 1;
+var count = 0;
 let boolean1 = true;
 let boolean2 = true;
+
+hideOnStart();
+
+function hideOnStart() {
+  document
+    .querySelectorAll("tr")[0]
+    .querySelectorAll("th")[8]
+    .classList.add("columnHide");
+  document
+    .querySelectorAll("tr")[0]
+    .querySelectorAll("th")[9]
+    .classList.add("columnHide");
+}
 
 function addNewRow() {
   var table = document.getElementById("myTable");
@@ -68,9 +81,14 @@ function onCheckboxClick(checkbox) {
   var submitButton = document.getElementById("button");
 
   if (checkbox.checked == true) {
-    submitButton.style.backgroundColor = "orange";
-    submitButton.disabled = false;
+    count++;
+    // alert(count);
     rowSelect.style.backgroundColor = "yellow";
+
+    if (count > 0) {
+      submitButton.style.backgroundColor = "orange";
+      submitButton.disabled = false;
+    }
 
     //delete button
     var deleteButton = document.createElement("td");
@@ -86,10 +104,37 @@ function onCheckboxClick(checkbox) {
 
     rowSelect.appendChild(deleteButton);
     rowSelect.appendChild(editButton);
+
+    document
+      .querySelectorAll("tr")[0]
+      .querySelectorAll("th")[8]
+      .classList.remove("columnHide");
+    document
+      .querySelectorAll("tr")[0]
+      .querySelectorAll("th")[9]
+      .classList.remove("columnHide");
+    row.querySelectorAll("td")[8].classList.remove("columnHide");
+    row.querySelectorAll("td")[9].classList.remove("columnHide");
   } else {
-    submitButton.disabled = true;
-    submitButton.style.backgroundColor = "grey";
-    submitButton.setAttribute("onclick", "submitResult()");
+    count--;
+//  alert(count);
+    if (count == 0) {
+      submitButton.disabled = true;
+      submitButton.style.backgroundColor = "grey";
+      // submitButton.setAttribute("onclick", "submitResult()");
+
+      document
+        .querySelectorAll("tr")[0]
+        .querySelectorAll("th")[8]
+        .classList.add("columnHide");
+      document
+        .querySelectorAll("tr")[0]
+        .querySelectorAll("th")[9]
+        .classList.add("columnHide");
+      rowSelect.querySelectorAll("td")[8].classList.add("columnHide");
+      rowSelect.querySelectorAll("td")[9].classList.add("columnHide");
+    }
+
     rowSelect.style.backgroundColor = "#fff";
     rowSelect.deleteCell(9);
     rowSelect.deleteCell(8);
@@ -102,7 +147,25 @@ function deleteRow(rowObject) {
   document.getElementById("myTable").deleteRow(tr);
 
   alert("Selected record deleted successfully.");
-  // count--;
+  count--;
+  // alert(count);
+  if (count == 0) {
+    var submitButton = document.getElementById("button");
+    submitButton.disabled = true;
+    submitButton.style.backgroundColor = "grey";
+    // submitButton.setAttribute("onclick", "submitResult()");
+
+    document
+      .querySelectorAll("tr")[0]
+      .querySelectorAll("th")[8]
+      .classList.add("columnHide");
+    document
+      .querySelectorAll("tr")[0]
+      .querySelectorAll("th")[9]
+      .classList.add("columnHide");
+    rowSelect.querySelectorAll("td")[8].classList.add("columnHide");
+    rowSelect.querySelectorAll("td")[9].classList.add("columnHide");
+  }
 }
 
 function editRow(rowObject) {
