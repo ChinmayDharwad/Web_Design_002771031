@@ -245,13 +245,6 @@ function submitted(e) {
     validAdd = true;
   }
 
-  alert(validAdd);
-  alert(check1.checked);
-  alert(check2.checked);
-  alert(check3.checked);
-  alert(check4.checked);
-  alert(check5.checked);
-
   // combining all validation on submit
   if (
     validTitle &&
@@ -391,7 +384,6 @@ function drinkDetail() {
     sizeCheck();
   } else {
     document.getElementById("coldCoffee").style.display = "none";
-    // document.getElementById("addCustom2").style.display = "none";
   }
 
   if (drink.value == "lemonIcedTea") {
@@ -405,7 +397,6 @@ function drinkDetail() {
     sizeCheck();
   } else {
     document.getElementById("lemonIcedTea").style.display = "none";
-    // document.getElementById("addCustom3").style.display = "none";
   }
 
   if (drink.value == "expresso") {
