@@ -224,17 +224,35 @@ function submitted(e) {
 
   //to validate additional customization
   if (
-    add1.value != "" ||
-    add2.value != "" ||
-    add3.value != "" ||
-    add4.value != "" ||
-    add5.value != ""
+    check1.checked == true ||
+    check2.checked ==true ||
+    check3.checked == true ||
+    check4.checked ==true ||
+    check5.checked == true
   ) {
-    validAdd = true;
+    if (
+      add1.value != "" ||
+      add2.value != "" ||
+      add3.value != "" ||
+      add4.value != "" ||
+      add5.value != ""
+    ) {
+      validAdd = true;
+    } else {
+      validAdd = false;
+    }
   } else {
-    validAdd = false;
+    validAdd = true;
   }
 
+  alert(validAdd);
+  alert(check1.checked);
+  alert(check2.checked);
+  alert(check3.checked);
+  alert(check4.checked);
+  alert(check5.checked);
+
+  // combining all validation on submit
   if (
     validTitle &&
     validFname &&
@@ -280,7 +298,17 @@ function submitted(e) {
     c8.innerHTML = document.getElementById("city").value;
     c9.innerHTML = document.getElementById("state").value;
     c10.innerHTML = document.getElementById("zipcode").value;
-    c11.innerHTML = fb.value + ", " + google.value + ", " + yelp.value;
+
+    if(fb.checked==true){
+        c11.innerHTML = fb.value+", ";
+      }
+    if(google.checked==true){
+       c11.innerHTML += google.value+", "
+    }
+    if(yelp.checked == true){
+      c11.innerHTML += yelp.value
+    }
+
     c12.innerHTML = drink.value;
 
     if (check1.checked == true) {
