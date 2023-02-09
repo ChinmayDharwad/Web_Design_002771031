@@ -258,12 +258,48 @@ function submitted(e) {
     c10.innerHTML = document.getElementById("zipcode").value;
     c11.innerHTML = fb.value + ", " + google.value + ", " + yelp.value;
     c12.innerHTML = drink.value;
+    if(check1.checked==true){
+      c13.innerHTML = check1.value;
+    }
+    else if(check2.checked==true){
+      c13.innerHTML = check2.value;
+    }
+    if(check3.checked==true){
+      c13.innerHTML = check3.value;
+    }
+    if(check4.checked==true){
+      c13.innerHTML = check4.value;
+    }
+    if(check5.checked==true){
+      c13.innerHTML = check5.value;
+    }
     c14.innerHTML = add.value;
+    c15.innerHTML = comments.value;
 
     formToReset.reset();
     validTitle = false;
   } else {
     alert("Please enter valid details");
+  }
+}
+
+
+// if the checkbox for drinksize is checked, uncheck it
+function sizeCheck() {
+  if ((check1.checked = true)) {
+    check1.checked = false;
+  }
+  if ((check2.checked = true)) {
+    check2.checked = false;
+  }
+  if ((check3.checked = true)) {
+    check3.checked = false;
+  }
+  if ((check4.checked = true)) {
+    check4.checked = false;
+  }
+  if ((check5.checked = true)) {
+    check5.checked = false;
   }
 }
 
@@ -273,15 +309,12 @@ function drinkDetail() {
   if (drink.value == "hotBlackTea") {
     document.getElementById("hotBlackTea").style.display = "block";
 
-    // custom2.style.display = "none";
-    // custom3.style.display = "none";
-    // custom4.style.display = "none";
-    // custom5.style.display = "none";
+    custom2.style.display = "none";
+    custom3.style.display = "none";
+    custom4.style.display = "none";
+    custom5.style.display = "none";
 
-    // check2.checked = flase;
-    // check3.checked = flase;
-    // check4.checked = flase;
-    // check5.checked = flase;
+    sizeCheck();
   } else {
     document.getElementById("hotBlackTea").style.display = "none";
   }
@@ -289,15 +322,12 @@ function drinkDetail() {
   if (drink.value == "coldCoffee") {
     document.getElementById("coldCoffee").style.display = "block";
 
-    // custom1.style.display = "none";
-    // custom3.style.display = "none";
-    // custom4.style.display = "none";
-    // custom5.style.display = "none";
+    custom1.style.display = "none";
+    custom3.style.display = "none";
+    custom4.style.display = "none";
+    custom5.style.display = "none";
 
-    // check1.checked = flase;
-    // check3.checked = flase;
-    // check4.checked = flase;
-    // check5.checked = flase;
+    sizeCheck();
   } else {
     document.getElementById("coldCoffee").style.display = "none";
     // document.getElementById("addCustom2").style.display = "none";
@@ -305,6 +335,13 @@ function drinkDetail() {
 
   if (drink.value == "lemonIcedTea") {
     document.getElementById("lemonIcedTea").style.display = "block";
+
+    custom1.style.display = "none";
+    custom2.style.display = "none";
+    custom4.style.display = "none";
+    custom5.style.display = "none";
+
+    sizeCheck();
   } else {
     document.getElementById("lemonIcedTea").style.display = "none";
     // document.getElementById("addCustom3").style.display = "none";
@@ -312,36 +349,40 @@ function drinkDetail() {
 
   if (drink.value == "expresso") {
     document.getElementById("expresso").style.display = "block";
+
+    custom1.style.display = "none";
+    custom3.style.display = "none";
+    custom2.style.display = "none";
+    custom5.style.display = "none";
+
+    sizeCheck();
   } else {
     document.getElementById("expresso").style.display = "none";
-    // document.getElementById("addCustom4").style.display = "none";
   }
 
   if (drink.value == "latte") {
     document.getElementById("latte").style.display = "block";
+
+    custom1.style.display = "none";
+    custom3.style.display = "none";
+    custom2.style.display = "none";
+    custom4.style.display = "none";
+
+    sizeCheck();
   } else {
     document.getElementById("latte").style.display = "none";
-    // document.getElementById("addCustom4").style.display = "none";
   }
 }
 
 function addOn() {
   if (check1.checked == true) {
     custom1.style.display = "block";
-    // custom2.style.display = "none";
-    // custom3.style.display = "none";
-    // custom4.style.display = "none";
-    // custom5.style.display = "none";
   } else {
     custom1.style.display = "none";
   }
 
   if (check2.checked == true) {
     custom2.style.display = "block";
-    // custom1.style.display = "none";
-    // custom3.style.display = "none";
-    // custom4.style.display = "none";
-    // custom5.style.display = "none";
   } else {
     custom2.style.display = "none";
   }
