@@ -71,7 +71,11 @@ var yelp = document.getElementById("yelp");
 
 var drink = document.getElementById("drink");
 
-var add = document.getElementById("custom");
+var add1 = document.getElementById("custom1");
+var add2 = document.getElementById("custom2");
+var add3 = document.getElementById("custom3");
+var add4 = document.getElementById("custom4");
+var add5 = document.getElementById("custom5");
 
 var comments = document.getElementById("comments");
 comments.addEventListener("input", validate);
@@ -177,6 +181,20 @@ function validate(e) {
   }
 }
 
+function resetCheck() {
+  document.getElementById("hotBlackTea").style.display = "none";
+  document.getElementById("coldCoffee").style.display = "none";
+  document.getElementById("lemonIcedTea").style.display = "none";
+  document.getElementById("expresso").style.display = "none";
+  document.getElementById("latte").style.display = "none";
+
+  custom1.style.display = "none";
+  custom2.style.display = "none";
+  custom3.style.display = "none";
+  custom4.style.display = "none";
+  custom5.style.display = "none";
+}
+
 // write a function for submitted
 function submitted(e) {
   e.preventDefault();
@@ -205,7 +223,13 @@ function submitted(e) {
   }
 
   //to validate additional customization
-  if (add.value != "") {
+  if (
+    add1.value != "" ||
+    add2.value != "" ||
+    add3.value != "" ||
+    add4.value != "" ||
+    add5.value != ""
+  ) {
     validAdd = true;
   } else {
     validAdd = false;
@@ -258,31 +282,40 @@ function submitted(e) {
     c10.innerHTML = document.getElementById("zipcode").value;
     c11.innerHTML = fb.value + ", " + google.value + ", " + yelp.value;
     c12.innerHTML = drink.value;
-    if(check1.checked==true){
+
+    if (check1.checked == true) {
       c13.innerHTML = check1.value;
-    }
-    else if(check2.checked==true){
+    } else if (check2.checked == true) {
       c13.innerHTML = check2.value;
-    }
-    if(check3.checked==true){
+    } else if (check3.checked == true) {
       c13.innerHTML = check3.value;
-    }
-    if(check4.checked==true){
+    } else if (check4.checked == true) {
       c13.innerHTML = check4.value;
-    }
-    if(check5.checked==true){
+    } else if (check5.checked == true) {
       c13.innerHTML = check5.value;
     }
-    c14.innerHTML = add.value;
+
+    if (add1.value != "") {
+      c14.innerHTML = add1.value;
+    } else if (add2.value != "") {
+      c14.innerHTML = add2.value;
+    } else if (add3.value != "") {
+      c14.innerHTML = add3.value;
+    } else if (add4.value != "") {
+      c14.innerHTML = add4.value;
+    } else if (add5.value != "") {
+      c14.innerHTML = add5.value;
+    }
+
     c15.innerHTML = comments.value;
 
     formToReset.reset();
+    resetCheck();
     validTitle = false;
   } else {
     alert("Please enter valid details");
   }
 }
-
 
 // if the checkbox for drinksize is checked, uncheck it
 function sizeCheck() {

@@ -16,10 +16,9 @@
         padding: 50px;
       }
 
-      #feedbackTable td{
+      #feedbackTable td {
         padding: 10px;
       }
-
     </style>
   </head>
   <body>
@@ -145,10 +144,13 @@
           </div>
 
           <label for="zipcode">How did you hear*:</label>
-          
-          <input type="checkbox" id ="fb" name="source" value="facebook" /> Facebook
-          <input type="checkbox" id="google" name="source" value="google" /> Google
-          <input type="checkbox" id="yelp" name="source" value="yelp" /> Yelp <br /><br />
+
+          <input type="checkbox" id="fb" name="source" value="facebook" />
+          Facebook
+          <input type="checkbox" id="google" name="source" value="google" />
+          Google
+          <input type="checkbox" id="yelp" name="source" value="yelp" /> Yelp
+          <br /><br />
 
           <!-- items dropdown -->
           <label for="drink">Drinks*</label>
@@ -185,7 +187,7 @@
             >
             <textarea
               name="text"
-              id="custom"
+              id="custom1"
               placeholder="additional need"
               rows="2"
               cols="25"
@@ -217,7 +219,7 @@
             >
             <textarea
               name="text"
-              id="custom"
+              id="custom2"
               placeholder="additional need"
               rows="2"
               cols="25"
@@ -227,10 +229,7 @@
 
           <!-- checkbox for drink 3 -->
           <div id="lemonIcedTea" style="display: none">
-            <label for="size"
-              >Lemon Iced Tea - Large: 
-              ($1.7 extra)</label
-            >
+            <label for="size">Lemon Iced Tea - Large: ($1.7 extra)</label>
             <input
               id="checkBox3"
               type="checkbox"
@@ -249,7 +248,7 @@
             >
             <textarea
               name="text"
-              id="custom"
+              id="custom3"
               placeholder="additional need"
               rows="2"
               cols="25"
@@ -281,7 +280,7 @@
             >
             <textarea
               name="text"
-              id="custom"
+              id="custom4"
               placeholder="additional need"
               rows="2"
               cols="25"
@@ -313,7 +312,7 @@
             >
             <textarea
               name="text"
-              id="custom"
+              id="custom5"
               placeholder="additional need"
               rows="2"
               cols="25"
@@ -330,15 +329,18 @@
             cols="25"
           ></textarea>
           <br /><br />
-          <input type="Submit"/>
+          <input type="Submit" />
           <input type="Reset" />
           <br /><br />
         </form>
       </main>
     </div>
 
-    <div id = "record" style="margin-left: 5%; text-align: center; border-color: black;">
-      <br/><br/> 
+    <div
+      id="record"
+      style="margin-left: 5%; text-align: center; border-color: black"
+    >
+      <br /><br />
       <h2>Feeback Table:</h2>
       <table border="1" id="feedbackTable">
         <tr>
