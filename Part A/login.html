@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator login</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Login to access Calculator</h1>
+    <form id="login_form">
+      <label for="email">Email: </label>
+      <input type="text" id="email" />
+      <div class="error" id="emailError" style="display: none;"></div><br />
+      <label for="username">Username: </label>
+      <input type="text" id="username" />
+      <div class="error" id="usernameError" style="display: none;"></div><br />
+      <label for="password">Password: </label>
+      <input type="password" id="password" />
+      <div class="error" id="passwordError" style="display: none;"></div><br />
+      <input type="submit" value="Login" id="submit"/>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
