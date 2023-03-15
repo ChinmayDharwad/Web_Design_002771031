@@ -1,0 +1,88 @@
+/* Variables */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom Properties */
+:root {
+  --header-height: 70px;
+  --footer-height: 50px;
+  --primary-color: #8B4513;
+  --secondary-color: #F5DEB3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu .menu-items .menu-item button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #F5DEB3;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu .menu-items .menu-item button:hover {
+  background-color: #efca86;
+}
+
+/* Grid */
+.menu {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #F5DEB3;
+}
+.menu h2 {
+  margin-top: 0%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.menu .menu-items {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.menu .menu-items .menu-item {
+  background-color: white;
+}
+.menu .menu-items .menu-item img {
+  width: 100%;
+  height: 300px;
+}
+.menu .menu-items .menu-item h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.menu .menu-items .menu-item h3 span {
+  color: red;
+  text-align: end;
+}
+.menu .menu-items .menu-item p {
+  text-align: center;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 15px;
+}
+.menu .videos-about {
+  padding-top: 75px;
+}
+.menu .videos-about .feedback button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #8B4513;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu .videos-about .feedback button:hover {
+  background-color: #efca86;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,48 @@
+@import 'style';
+
+/* Nesting */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    nav {
+      @include nav-bar();              //included the navbar mixin
+      a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+          text-decoration: underline;
+          }
+        
+      }
+    }
+  }
+
+  .welcome{
+    align-items: center;
+    background-color: wheat;
+    padding: 20px;
+    padding-top: 80px;
+    h1 {
+      color: black;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,16 @@
+/* Variables */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom Properties */
+:root {
+  --header-height: 70px;
+  --footer-height: 50px;
+  --primary-color: #8B4513;
+  --secondary-color: #F5DEB3;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="images/coffee-favicon.png">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <title> Feedback </title>
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .heading{
+                padding: 30px 50px;
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+                position: absolute;
+                top:0%;
+                bottom: 0%;
+            }
+
+            .back-img{
+                background-image: url("images/coffee_shop.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* width: 100vw; */
+                height: 100vh;
+                filter: blur(2px);
+            }
+
+            .feedback-form{
+                font-size: 30px;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                color: white;
+                /* font-weight: bold; */
+                backdrop-filter: blur(3px);
+                position: absolute;
+                top:35%;
+                left: 35%;
+            }
+            
+
+            .submit{
+                padding-left: 140px;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div class="back-img"></div>
+        <div id="feedback-page">
+            <div class="heading">
+                <h2> Feedback :</h2>
+            </div>
+
+            <div class="feedback-form">
+                <form>
+                    <label for="fname">Name: </label>
+                    <input type="text" id="fname" name="fname" style="margin-left: 55px"><br><br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="visit date" style="margin-left: 65px"><br><br>
+					<label for="date">Time:</label>
+                    <input type="time" id="time" name="visit time" style="margin-left: 65px"><br><br>
+                    <label for="comment">Comment:</label>
+                    <input type="text" id="comment" name="comment" style="margin-left: 10px"><br><br>
+                </form>
+                <div class="submit">
+                    <button type="Submit" id="submitForm">
+                        Submit
+                    </button>
+                    <script>
+                        $("#submitForm").click(function() {
+                        alert("Feedback Submitted Submitted.");
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

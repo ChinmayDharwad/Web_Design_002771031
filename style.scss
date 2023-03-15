@@ -1,0 +1,33 @@
+/* Variables */
+$primary-color: #8B4513;
+$secondary-color: #F5DEB3;
+$white-color: white;
+
+// interpolation feature to define the font type
+$font: 'font-family'; 
+$type: 'Roboto', sans-serif;
+
+* {
+   #{$font}: $type;     // used the interpolation feature
+}
+
+// mixin for nav bar
+@mixin nav-bar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* Custom Properties */
+:root {
+  --header-height: 70px;
+  --footer-height: 50px;
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
