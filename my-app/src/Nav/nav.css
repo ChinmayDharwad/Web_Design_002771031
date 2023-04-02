@@ -1,0 +1,58 @@
+/* Nav Bar Styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav .site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 1rem;
+}
+
+.nav ul li.active a {
+  color: #ffd700;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+footer div {
+  font-size: 1.2rem;
+}

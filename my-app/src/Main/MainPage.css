@@ -1,0 +1,31 @@
+/* Style for the navigation links */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
